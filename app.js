@@ -125,5 +125,5 @@ const server = http.createServer(async (req, res) => {
     }
 })
 
-const PORT = 5173
+const PORT = process.env.port 
 server.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`))
